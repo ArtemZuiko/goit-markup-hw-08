@@ -1,0 +1,92 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: var(--footer-background-color);
+
+  &-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.benefits__name.footer-join {
+  color: var(--primery-white-color);
+
+  margin-bottom: 20px;
+}
+
+/* ==================FOOTER FORM======================= */
+
+.footer-modal-form {
+  display: flex;
+
+  &_input {
+    width: 358px;
+    height: 50px;
+    padding-left: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-background-color);
+    color: var(--primery-white-color);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.modal-btn__footer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+}
+
+.modal-form-btn-footer:hover,
+.modal-form-btn-footer:focus {
+  background: #188ce8;
+}
+
+.modal-btn__icon {
+  margin-left: 10px;
+}
+
+.address__map,
+.address .address__mail,
+.address .address__phone {
+  font-style: normal;
+
+  color: var(--primery-white-color);
+}
+
+.address .address__mail,
+.address .address__phone {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color var(--transition-fx);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address .address__phone:hover,
+.address .address__phone:focus {
+  color: var(--accent-color);
+}
+
+.ws-address {
+  margin-top: 20px;
+}
+
+.address__list:not(:last-child) {
+  margin-bottom: 9px;
+}

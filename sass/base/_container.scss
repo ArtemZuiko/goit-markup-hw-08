@@ -1,0 +1,25 @@
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .top-nav,
+  .menu,
+  .contact-list,
+  .to-do-gallery,
+  .team-list,
+  .benefits,
+  .filter-btn-list,
+  .projects {
+    display: flex;
+  }
+  
+  .benefits,
+  .to-do-gallery,
+  .team-list,
+  .projects {
+    gap: 30px;
+  }

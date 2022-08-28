@@ -1,0 +1,27 @@
+.to-do-section {
+  padding-top: 0;
+}
+
+.to-do-gallery__thumb {
+  position: relative;
+}
+
+.to-do-gallery__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primery-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
