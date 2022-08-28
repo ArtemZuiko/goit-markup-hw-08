@@ -1,13 +1,26 @@
+.filter-btn-list,
+.projects {
+  display: flex;
+}
+
+.filter-btn-list {
+  justify-content: unset;
+}
+
 .projects {
   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .project-card {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 2);
+
   background-color: var(--primery-white-color);
 
   &-link {
     display: block;
+    height: 100%;
 
     transition: box-shadow var(--transition-fx);
 
@@ -66,5 +79,28 @@
   .project-card-link:hover &,
   .project-card-link:focus & {
     transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .filter-btn-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .projects {
+    flex-direction: unset;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .project-info.first {
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-card {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }

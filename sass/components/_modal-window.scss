@@ -49,3 +49,22 @@
     color: var(--secondary-color);
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+
+  .modal-form {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 384px;
+    height: auto;
+  }
+}

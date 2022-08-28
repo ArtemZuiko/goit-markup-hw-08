@@ -1,25 +1,43 @@
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
-  
-  .top-nav,
-  .menu,
-  .contact-list,
-  .to-do-gallery,
-  .team-list,
-  .benefits,
-  .filter-btn-list,
-  .projects {
-    display: flex;
-  }
-  
-  .benefits,
-  .to-do-gallery,
-  .team-list,
-  .projects {
-    gap: 30px;
-  }
+}
+
+// .top-nav,
+// .menu,
+// .contact-list,
+// .to-do-gallery,
+// .team-list,
+// .benefits,
+// .filter-btn-list,
+// .projects {
+//   display: flex;
+// }
+
+// .benefits,
+// .to-do-gallery,
+// .team-list,
+// .projects {
+//   gap: 30px;
+// }

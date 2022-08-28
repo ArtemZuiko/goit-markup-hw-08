@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="24" height="16">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="contact-list list">
           <li class="contact-list__item">
             <a class="contact-list__link contact-mail" href="mailto:info@devstudio.com"
@@ -53,6 +58,59 @@
             >
           </li>
         </ul>
+      </div>
+      <!-- ========================================MOBILE-MENU=============================== -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close-btn-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link mobile-menu__link_current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contact-list list">
+            <li class="mobile-menu__contact-list__item">
+              <a
+                class="mobile-menu__contact-link mobile-menu__contact-phone"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contact-list__item">
+              <a
+                class="mobile-menu__contact-link mobile-menu__contact-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__contact-item">
+              <a href="" class="mobile-menu__social-link link">Instagram</a>
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a href="" class="mobile-menu__social-link link">Twitter</a>
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a href="" class="mobile-menu__social-link link">Facebook</a>
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -81,12 +139,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-1.jpg"
-                    alt="Открыт веб-сайт на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-1.jpg    1x,
+                        ./images/portfolio/desc-pr-1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-1.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-1-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-1.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-1-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-1.jpg" alt="Открыт веб-сайт на ноутбуке" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -95,19 +171,37 @@
                 </div>
                 <div class="project-name-info">
                   <h2 class="project-name">Технокряк</h2>
-                  <p class="project-info">Веб-сайт</p>
+                  <p class="project-info first">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-2.jpg"
-                    alt="Два боскетболиста в прыжке c мячом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-2.jpg    1x,
+                        ./images/portfolio/desc-pr-2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-2.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-2-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-2.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-2-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-2.jpg" alt="Два баскетболиста с мячем" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -125,12 +219,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-3.jpg"
-                    alt="логотип рыбного ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-3.jpg    1x,
+                        ./images/portfolio/desc-pr-3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-3.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-3-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-3.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-3-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-3.jpg" alt="Логотип рыбного ресторана" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -146,12 +258,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-4.jpg"
-                    alt="накладные наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-4.jpg    1x,
+                        ./images/portfolio/desc-pr-4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-4.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-4-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-4.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-4-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-4.jpg" alt="Накладные аушники" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -167,12 +297,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-5.jpg"
-                    alt="белая и коричневая коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-5.jpg    1x,
+                        ./images/portfolio/desc-pr-5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-5.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-5-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-5.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-5-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-5.jpg" alt="Две подарочные коробки" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -188,12 +336,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-6.jpg"
-                    alt="на мониторе отображается сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-6.jpg    1x,
+                        ./images/portfolio/desc-pr-6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-6.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-6-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-6.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-6-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-6.jpg" alt="Открыт веб-сайт на мониоре" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -209,12 +375,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-7.jpg"
-                    alt="открытый журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-7.jpg    1x,
+                        ./images/portfolio/desc-pr-7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-7.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-7-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-7.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-7-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-7.jpg" alt="Журнал" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -230,12 +414,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-8.jpg"
-                    alt="ярлык для товара"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-8.jpg    1x,
+                        ./images/portfolio/desc-pr-8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-8.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-8-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-8.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-8-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-8.jpg" alt="Бирка" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -251,12 +453,30 @@
             <li class="project-card">
               <a href="" class="project-card-link link">
                 <div class="thumb-project-card">
-                  <img
-                    src="./images/portfolio/project-9.jpg"
-                    alt="на ноутбуке открыт сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-pr-9.jpg    1x,
+                        ./images/portfolio/desc-pr-9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tab-pr-9.jpg    1x,
+                        ./images/portfolio/tablet/tab-pr-9-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/mobile-pr-9.jpg    1x,
+                        ./images/portfolio/mobile/mobile-pr-9-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio/desc-pr-9.jpg" alt="Набор текста на ноутбуке" />
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -276,7 +496,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container container">
-        <div>
+        <div class="footer__logo-adress-container">
           <a class="logo footer__logo link" href="./index.html"
             >Web<span class="logo__studio footer">Studio</span></a
           >
@@ -300,7 +520,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__benefits-container">
           <h3 class="benefits__name footer-join">присоединяйтесь</h3>
           <ul class="social-list list">
             <li>
@@ -353,5 +573,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,10 @@
-.filter-button:not(:last-child) {
-  margin-right: 8px;
+// .filter-button:not(:last-child) {
+//   margin-right: 8px;
+// }
+.filter-btn-list {
+  column-gap: 8px;
+  row-gap: 15px;
+  flex-wrap: wrap;
 }
 
 .filter-btn {

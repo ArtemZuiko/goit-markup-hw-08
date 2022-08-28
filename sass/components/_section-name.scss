@@ -1,9 +1,18 @@
-.section-name {
-    font-size: 36px;
-    line-height: 1.17;
+@media screen and (min-width: 200px) {
+  .section-name {
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
-  
+
     color: var(--secondary-color);
-  
+
     margin-bottom: 50px;
   }
+
+  @media screen and (min-width: 1200px) {
+    .section-name {
+      font-size: 36px;
+      line-height: 1.17;
+    }
+  }
+}

@@ -3,12 +3,14 @@
   justify-content: center;
   gap: 30px;
 
+  flex-wrap: wrap;
+
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
@@ -30,5 +32,17 @@
     fill: var(--icons-color);
 
     transition: fill var(--transition-fx);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-logo__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-logo__link {
+    width: 170px;
   }
 }
