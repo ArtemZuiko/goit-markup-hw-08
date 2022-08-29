@@ -20,7 +20,6 @@
     text-align: center;
     letter-spacing: 0.06em;
 
-    width: 360px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -45,6 +44,10 @@
       url(../images/tablet-hero-bkg.jpg);
 
     max-width: 1199px;
+  }
+
+  .hero-name {
+    width: 360px;
   }
 }
 

@@ -8,7 +8,7 @@
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .benefits__name.footer-join {
@@ -21,7 +21,7 @@
   display: flex;
 
   &_input {
-    width: 358px;
+    width: auto;
     height: 50px;
     padding-left: 15px;
 
@@ -89,6 +89,18 @@
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 325px) {
+  .footer-modal-form_input {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .footer-modal-form_input {
+    width: 358px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-container:last-child {
     flex-wrap: wrap;
@@ -120,9 +132,22 @@
   }
 
   .modal-form-cont {
-    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal-form-cont {
+    margin-top: 60px;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+  }
+
+  .footer_input {
+    width: 358px;
   }
 }
 

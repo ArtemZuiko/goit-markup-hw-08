@@ -62,9 +62,30 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
   .modal {
     width: 384px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .modal {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal {
+    width: auto;
     height: auto;
   }
 }
